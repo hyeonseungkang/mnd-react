@@ -1,0 +1,20 @@
+.logs {
+	display: block;
+	color: white;
+	font-size: 10pt;
+	overflow: scroll;
+}
+
+.logs p {
+	display: block;
+	margin: 22px;
+	padding: 22px;
+}
+
+.logs p.camera-opened {
+	background-color: #454545;
+}
+
+.logs p.camera-closed {
+	background-color: #59423A;
+}
