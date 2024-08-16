@@ -19,12 +19,12 @@ export default function YellowBg({ logs }: { logs: Log[] }) {
         <div className="installed-date">
           <span id="installed-date-text">
             <strong>설치일시 : </strong>
-            {dateToStr(new Date(logs[0]?.date), false)}
+            {dateToStr(new Date(logs.pop()?.date as string), false)}
           </span>
           <br />
           <span id="closed-date-text">
             <strong>차단일시 : </strong>
-            {dateToStr(new Date(logs.pop()?.date as string), false)}
+            {dateToStr(new Date(logs[0]?.date), false)}
           </span>
         </div>
         <div className="installed-date">
